@@ -366,7 +366,7 @@ form .active-form {
 
 #contact form {
     padding: 10vh 5%;
-    height: 55vh;
+    min-height: 55vh;
     max-width: 40%;
     margin: 0 auto;
     background-color: #867772;
