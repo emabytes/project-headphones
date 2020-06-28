@@ -24,7 +24,7 @@ header {
 
 .logo {
     height: 5vh;
-    width: 100%;
+    width: 10%;
     background: url(../img/logo.svg) left top/contain no-repeat;
     position: fixed;
     top: 30px;
