@@ -223,6 +223,7 @@ main {
 }
 
 /* experience page */
+
 #experience article h2 {
     padding: 8vh 0;
 }
@@ -352,4 +353,106 @@ main {
     border-radius: 2px;
     background: #ebccc2;
     font-weight: 600;
+}
+
+/* contact form */
+#top-nav .active-top {
+    color: #fff;
+}
+
+form .active-form {
+    color: #fff;
+}
+
+#contact form {
+    padding: 10vh 5%;
+    height: 55vh;
+    max-width: 40%;
+    margin: 0 auto;
+    background-color: #867772;
+    border-radius: 5px;
+}
+
+.top-btn-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 3vh;
+}
+
+#contact h1 {
+    text-align: center;
+    padding: 2vh 0 7vh 0;
+    letter-spacing: 1px;
+    font-size: 2.5em;
+}
+
+#contact input {
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 8vh;
+    border-radius: 4px;
+    border: 1px solid #2e2e2e;
+    outline: none;
+    background-color: #867772;
+}
+
+.fname, .lname {
+    width: 49%;
+    display: inline-block;
+}
+
+.fname {
+    margin-right: 1%;
+}
+
+.email {
+    display: block;
+    width: 100%;
+}
+
+.btn-contact {
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #ebccc2;
+    padding: 15px 55px;
+}
+
+.btn-contact:hover {
+    color: rgba(235, 204, 194, 0.5);
+    transition: color 1s ease;
+}
+
+::placeholder {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.1em;
+    color: rgba(235, 204, 194, 0.5);
+}
+
+.btn-large {
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.1em;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: white;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #ebccc2;
+    color: #867772;
+    padding: 10px 0;
+    border-radius: 3px;
+}
+
+.btn-large:hover {
+    color: #2e2e2e;
+    transition: color 0.5s ease;
+}
+
+
+form h1 span {
+    font-size: 0.6em;
+    display: block;
 }

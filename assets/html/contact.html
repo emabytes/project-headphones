@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Lounger</title>
+    <title>Subscribe & Contact</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;600&display=swap" rel="stylesheet">
 </head>
-
-<!--background photo-->
-<body id="lounger-page" class="lounger-bcg">
-
-    <!-- top navigation -->
-    <header class="top-nav-wrap">
+<body id="contact">
+     <!-- top navigation -->
+     <header class="top-nav-wrap">
         <a class="logo" href="../../index.html"></a>
         <ul id="top-nav">
-            <li><a href="../html/contact.html">Subscribe & Contact</a></li>
+            <li><a class="active-top" href="contact.html" >Subscribe & Contact</a></li>
             <ul class="social-wrap">
                 <li><a class="social-link" href="#">Facebook</a></li>
                 <li><a class="social-link" href="#">Twitter</a></li>
@@ -25,11 +21,9 @@
             <li><a href="#">DE</a></li>
         </ul>
     </header>
-
     <!-- side navigation -->
     <nav class="side-nav-wrap">
         <ul id="side-nav">
-            <!-- vertical line -->
             <span class="line-wrap">
                 <span class="line"></span>
             </span>
@@ -37,7 +31,7 @@
             <span class="line-wrap">
                 <span class="line"></span>
             </span>
-            <li class="side-link"><a class="active-page" href="lounger.html">Lounger</a></li>
+            <li><a href="../html/lounger.html">Lounger</a></li>
             <span class="line-wrap">
                 <span class="line"></span>
             </span>
@@ -50,19 +44,21 @@
         </ul>
     </nav>
 
-    <!-- lounger section -->
-    <section id="lounger">
-        <article>
-            <h2 class="text-title">The Lounger</h2>
-            <p>The Lounger is your trans-sensory vessel to audio-haptic pleasure. Precision sculpted from luxe material,
-                this high-tech pod is calibrated for comfort and inspired by the Japanese art of origami. Through its
-                seamlessly integrated tablet, it delivers a rich and varied playlist of full-body experiences, with
-                tracks updated monthly.
-            <p>Produced in the Eu, this limited edition lounger is suitable for events, clubs, airlines, hotels,
-                workplaces and indulgence-seeking individuals. </p>
-            <p>Available from February 2018</p>
-            </p>
-        </article>
+    <section class="form-wrap">
+        <form action="">
+            <div class="top-btn-container">
+                <a class="btn-contact active-form" href="contact.html">Contact</a>
+                <a class="btn-contact" href="../html/subscribe.html">Subscribe</a>
+            </div>
+            <h1 class="text-title">Contact Us</h1>
+            <div>
+                <input type="text" class="fname" name="fname" placeholder="First name" required>
+                <input type="text" class="lname" name="lname" placeholder="Last name" required>
+            </div>
+            <input type="email" class="email" name="email" required placeholder="Email">
+            <a class="btn-large" href="#">Send Message</a>
+        </form>
     </section>
+    
 </body>
 </html>
