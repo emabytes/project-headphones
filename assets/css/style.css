@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #2e2e2e;
+    color: #867772;
+}
+
+a {
+    text-decoration: none;
+    color: #867772;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    height: 10vh;
+}
+
+.logo {
+    height: 5vh;
+    width: 100%;
+    background: url(../img/logo.svg) left top/contain no-repeat;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+}
+
+.top-nav-wrap {
+    height: 13vh;
+    width: 88%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#top-nav {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    right: 5%;
+    font-size: 0.9em;
+}
+
+.social-wrap {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#top-nav a:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    transition: color 0.5s ease;
+}
+
+.side-nav-wrap {
+    height: 50vh;
+    padding-left: 5%;
+    position: fixed;
+    top: 30vh;
+}
+
+#side-nav li {
+    text-transform: uppercase;
+    padding-bottom: 10vh;
+    font-size: 0.9em;
+}
+
+#side-nav a {
+    color: #ebccc2;
+}
+
+#side-nav li a:hover {
+    color: #fff;
+    transition: color 1s ease;
+}
+
+/* large circle */
+.side-link::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -50px;
+    margin-top: -5px;
+}
+
+/* small circle */
+#side-nav a::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -45px;
+}
+
+/* vertical line */
+.line-wrap {
+    position: relative;
+}
+
+.line::before {
+    content: "";
+    height: 7vh;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 16px;
+    left: -40px;
+}
+
+/* active page link */
+#side-nav .active-page {
+    color: #fff;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#about {
+    height: 50vh;
+}
+
+#about h1 {
+    width: 35%;
+    padding-top: 10vh;
+    padding-left: 30%;
+    font-weight: 300;
+    font-size: 2.1em;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: rgb(234, 204, 194);
+}
+
+.new-line {
+    display: inline-block;
+}
+
+#main-img {
+    height: 80vh;
+    background: url(../img/section-about-1.jpg) center/cover no-repeat;
+    margin-bottom: 20vh;
+}
+
+#design-alchemy {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15vh;
+}
+
+#design-alchemy img {
+    height: 60vh;
+}
+
+#design-alchemy article {
+    width: 35%;
+    padding-left: 5%;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-title {
+    font-size: 2em;
+    font-weight: 300;
+    color: #ebccc2;
+    letter-spacing: 1px;
+}
+
+#design-alchemy p {
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+/* second page - lounger*/
+#lounger-page, #experience-page {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.lounger-bcg {
+    background: url(../img/section-voyager.jpg) -330px/cover no-repeat;
+}
+
+#lounger article, #experience article {
+    background-color: #2e2e2e;
+    height: 100vh;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8%;
+}
+
+#lounger article p, #experience article p {
+    font-weight: 300;
+    width: 75%;
+    padding-bottom: 10px;
+}
+
+#lounger article h2 {
+    padding-bottom: 7vh;
+}
+
+/* experience page */
+#experience article h2 {
+    padding: 8vh 0;
+}
+
+.experience-bcg {
+    background: url(../img/section-experience-1.jpg) -150px/80% 100vh no-repeat;
+}
+
+/* inspiration page */
+.video-wrap {
+    padding: 10vh 0 15vh 20%;
+}
+
+.btn {
+    border: 2px solid #867772;
+    padding: 4px 10px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    margin-left: 1%;
+}
+
+#inspiration article:nth-of-type(1) {
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#inspiration article:nth-of-type(1) h3, #inspiration article:nth-of-type(2) h3 {
+    font-weight: 300;
+    color: #ebccc2;
+    letter-spacing: 3px;
+    padding-bottom: 2vh;
+}
+
+#inspiration article:nth-of-type(1) h2 {
+    padding-bottom: 6vh;
+    letter-spacing: 3px;
+    font-size: 2.5em;
+}
+
+#inspiration article:nth-of-type(1) ul {
+    width: 28%;
+    display: flex;
+    padding-bottom: 3vh;
+}
+
+#inspiration article:nth-of-type(1) p {
+    font-weight: 300;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    padding-bottom: 15vh;
+}
+
+#inspiration article:nth-of-type(2) {
+    padding-left: 20%;
+    padding-bottom: 30vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60vh 60vh;
+}
+
+#inspiration article:nth-of-type(2) img {
+    width: 100%;
+}
+
+#inspiration article:nth-of-type(2) div {
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#inspiration article:nth-of-type(2) h2 {
+    padding-bottom: 4vh;
+}
+
+#inspiration article:nth-of-type(2) p {
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/* shop section */
+.shop-bcg {
+    background: url(../img/section-composition4.jpg) -220px/contain no-repeat;
+}
+
+#shop-page {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    height: 100vh;
+    width: 100%;
+}
+
+#shop {
+    background-color: #2e2e2e;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#shop h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-bottom: 2vh;
+}
+
+#shop h4 {
+    font-size: 1.1em;
+    font-weight: 300;
+    padding-bottom: 2vh;
+}
+
+#shop h5 {
+    font-size: 1em;
+    font-weight: 300;
+    padding-bottom: 1vh;
+}
+
+.btn-pink {
+    padding: 10px 25px;
+    border-radius: 2px;
+    background: #ebccc2;
+    font-weight: 600;
+}
