@@ -278,13 +278,17 @@ main {
     padding-bottom: 15vh;
 }
 
+#inspiration{
+    width: 90%;
+    margin: 0 auto;
+}
+
 #inspiration article:nth-of-type(2) {
     padding-left: 20%;
     padding-bottom: 30vh;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-columns: 60vh 60vh;
 }
 
 #inspiration article:nth-of-type(2) img {
@@ -387,7 +391,7 @@ form .active-form {
     font-size: 2.5em;
 }
 
-#contact input {
+#contact input, .textarea {
     box-sizing: border-box;
     padding: 10px;
     margin-bottom: 8vh;
@@ -408,6 +412,10 @@ form .active-form {
 
 .email {
     display: block;
+    width: 100%;
+}
+
+.textarea{
     width: 100%;
 }
 
